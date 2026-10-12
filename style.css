@@ -1,0 +1,8 @@
+.task {
+  margin: 8px 0;           
+}
+
+.task.completed span {
+  text-decoration: line-through;  
+  color: gray;                    
+}
