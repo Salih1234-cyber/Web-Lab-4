@@ -1,13 +1,17 @@
 # Task Dashboard
 
-## Dosya Organizasyonu
-- index.html: Sayfanın yapısı
-- style.css: Tamamlanan görevlerin stili
-- taskManager.js: Task ve TaskManager sınıfları
-- api.js: Sahte sunucu isteği (fetchTasks)
-- main.js: DOM işlemleri ve olaylar
+A simple task dashboard built with vanilla JavaScript. Tasks are loaded asynchronously from a simulated server, rendered to the DOM, and can be toggled or deleted.
 
-## Karşılaştığım Zorluklar
-- Diziyi değiştirmeden güncellemek (map/filter/spread kullandım)
-- async/await ve Promise mantığını anlamak
-- ... (kendi yaşadığın zorlukları yaz)
+## File Organization
+- `index.html`: The page structure (heading, Load Tasks button, status message, task list container)
+- `style.css`: Styles for completed tasks (line-through)
+- `taskManager.js`: The `Task` and `TaskManager` classes
+- `api.js`: The fake server request (`fetchTasks`) using a Promise and `setTimeout`
+- `main.js`: DOM manipulation, event listeners, and async/await logic
+
+## Challenges I Faced
+- Updating arrays without mutating them (I used `map`, `filter`, and the spread operator)
+- Understanding how Promises and `async/await` work
+- Making the `id` read-only with `Object.defineProperty`
+- Re-rendering the task list after every toggle or delete
+- ... (add your own challenges here)
